@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAF4">
+
+    <!-- Layout chính -->
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="80dp"> <!-- Chừa chỗ cho BottomNav -->
+
+        <!-- Gọi file Search Bar -->
+        <include layout="@layout/layout_search_bar" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EAEAEA" />
+
+        <!-- Tìm bạn bếp -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👤 Tìm bạn bếp:"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_arrow_forward"
+                app:tint="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Button Upload (FAB) -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/layout_fab"
+            android:id="@+id/fabContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="100dp" />
+    </FrameLayout>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#f27e35"
+        app:itemIconSize="25dp"
+        app:itemTextAppearanceActive="@android:style/TextAppearance.Small"
+        app:itemTextAppearanceInactive="@android:style/TextAppearance.DeviceDefault.Small"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/selector_nav"
+        app:itemTextColor="@color/selector_nav" />
+</FrameLayout>

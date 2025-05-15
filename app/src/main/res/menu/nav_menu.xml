@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_profile" android:icon="@drawable/ic_profile" android:title="Bếp Cá Nhân" />
+        <item android:id="@+id/nav_notifications" android:icon="@drawable/ic_notifications" android:title="Thông Báo" />
+        <item android:id="@+id/nav_stats" android:icon="@drawable/ic_stats" android:title="Thống Kê Bếp" />
+        <item android:id="@+id/nav_recent" android:icon="@drawable/ic_history" android:title="Món đã xem gần đây" />
+        <item android:id="@+id/nav_premium" android:icon="@drawable/ic_premium" android:title="Premium" />
+        <item android:id="@+id/nav_challenges" android:icon="@drawable/ic_challenges" android:title="Thử Thách" />
+        <item android:id="@+id/nav_settings" android:icon="@drawable/ic_settings" android:title="Cài Đặt" />
+        <item android:id="@+id/nav_faq" android:icon="@drawable/ic_help" android:title="Những Câu Hỏi Thường Gặp" />
+        <item android:id="@+id/nav_feedback" android:icon="@drawable/ic_feedback" android:title="Gửi phản hồi" />
+    </group>
+</menu>

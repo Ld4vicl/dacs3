@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.app.chefshare.HomeFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/aiFragment"
+        android:name="com.android.cookeasy.AIFragment"
+        android:label="AI" />
+
+    <fragment
+        android:id="@+id/storageFragment"
+        android:name="com.app.chefshare.StorageFragment"
+        android:label="Storage" />
+</navigation>

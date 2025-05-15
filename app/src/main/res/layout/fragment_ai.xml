@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#e8d2be">
+
+    <!-- Nút Back (có thể ẩn nếu fragment dùng trong MainActivity) -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Quay lại"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:gravity="center_horizontal">
+
+            <!-- Tiêu đề & hướng dẫn -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👩‍🍳 Trợ Lý Công Thức AI"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textColor="#c2621f"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không biết nấu món gì hôm nay?\nNhập nguyên liệu và đầu bếp AI gợi ý công thức nhé!"
+                android:textAlignment="center"
+                android:textColor="#c77b34"
+                android:textSize="14sp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Các trường nhập -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📝 Nguyên liệu:"
+                android:textStyle="bold"
+                android:textColor="#de7d23"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/edtIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ví dụ: ức gà, nước mắm, tiêu..."
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_rounded_border_white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="👨‍👩‍👧‍👦 Khẩu phần ăn:"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#de7d23"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerPortion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍜 Ẩm thực:"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#de7d23"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerCuisine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔥 Mức độ:"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#de7d23"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🥦 Chế độ ăn:"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#de7d23"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/edtDiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ví dụ: chay, không gluten..."
+                android:padding="12dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_rounded_border_white" />
+
+            <Button
+                android:id="@+id/btnGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tạo Công Thức Ngay"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:backgroundTint="#f27e35"
+                android:padding="12dp" />
+
+            <TextView
+                android:id="@+id/tvRecipeResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#4E342E"
+                android:textSize="16sp"
+                android:background="#FFE0B2"
+                android:padding="16dp"
+                android:layout_marginTop="50dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

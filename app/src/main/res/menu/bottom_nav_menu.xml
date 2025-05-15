@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_search"
+        android:title="Tìm kiếm"/>
+    <item
+        android:id="@+id/nav_ai"
+        android:icon="@drawable/ic_add"
+        android:title="Tạo với AI"/>
+    <item
+        android:id="@+id/nav_storage"
+        android:icon="@drawable/ic_book"
+        android:title="Kho Món"/>
+</menu>

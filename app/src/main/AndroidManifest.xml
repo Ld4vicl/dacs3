@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.chefshare">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChefShare"
+        tools:targetApi="31">
+        <activity
+            android:name="com.app.chefshare.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.app.chefshare.RegisterActivity" />
+        <activity android:name="com.app.chefshare.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.app.chefshare.UploadRecipeActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.app.chefshare.PremiumActivity"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.app.chefshare.SearchActivity" />
+        <activity
+            android:name="com.app.chefshare.SearchResultsActivity"
+            android:launchMode="singleTop" />
+        <activity android:name="com.app.chefshare.SettingsActivity" />
+        <activity android:name="com.app.chefshare.RecentDishesActivity" />
+        <activity android:name="com.app.chefshare.ProfileActivity" />
+        <activity android:name="com.app.chefshare.EditProfileActivity" />
+        <activity
+            android:name="com.app.chefshare.RecipeDetailActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.app.chefshare.NotificationActivity" />
+    </application>
+</manifest>

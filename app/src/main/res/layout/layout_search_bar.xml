@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:gravity="center_horizontal"
+        android:src="@drawable/ic_arrow_back"
+        app:tint="#000000"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="12dp"
+            android:paddingEnd="48dp">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Gõ vào tên các nguyên liệu..."
+                android:background="@android:color/transparent"
+                android:paddingStart="36dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:textColorHint="#000000"
+                android:textColorHighlight="#000000"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:src="@android:drawable/ic_menu_search"
+                app:tint="#000000" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/btnFilter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center_vertical"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        app:tint="#333333" />
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAF4"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false">
+
+    <!-- Nội dung chính bên trong -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="80dp"> <!-- Chừa chỗ cho BottomNav -->
+
+        <!-- Thanh tìm kiếm -->
+        <include layout="@layout/layout_search_bar" />
+
+        <!-- Danh sách kết quả -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSearchResults"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <!-- Button Upload (FAB) -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/layout_fab"
+            android:id="@+id/fabContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="100dp" />
+    </FrameLayout>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#f27e35"
+        app:itemIconSize="25dp"
+        app:itemTextAppearanceActive="@android:style/TextAppearance.Small"
+        app:itemTextAppearanceInactive="@android:style/TextAppearance.DeviceDefault.Small"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/selector_nav"
+        app:itemTextColor="@color/selector_nav" />
+</FrameLayout>
