@@ -343,7 +343,7 @@ class UploadRecipeActivity : AppCompatActivity() {
             .build()
 
         val request = Request.Builder()
-            .url("https://api.cloudinary.com/v1_1/dnon651a4/image/upload") // Sửa lại Cloud name thành "dnon651a4"
+            .url("https://api.cloudinary.com/v1_1/degs4hlsq/image/upload")
             .post(requestBody)
             .build()
 

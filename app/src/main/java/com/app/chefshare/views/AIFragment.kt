@@ -100,7 +100,6 @@ class AIFragment : Fragment(R.layout.fragment_ai) {
         val requestBody = json.toRequestBody(mediaType)
 
         val retrofit = Retrofit.Builder()
-            //.baseUrl("https://api.openai.com/") //openAI
             .baseUrl("https://openrouter.ai/api/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()

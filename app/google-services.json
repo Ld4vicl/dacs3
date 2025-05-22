@@ -1,41 +1,66 @@
 {
   "project_info": {
-    "project_number": "261420243744",
-    "project_id": "chefshare-6c4e6",
-    "storage_bucket": "chefshare-6c4e6.firebasestorage.app"
+    "project_number": "69026075891",
+    "firebase_url": "https://chefshare-cf124-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "chefshare-cf124",
+    "storage_bucket": "chefshare-cf124.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:261420243744:android:72e13152bb2dde8f52d545",
+        "mobilesdk_app_id": "1:69026075891:android:4c1cd15287aab9d3ccd386",
         "android_client_info": {
           "package_name": "com.android.chefshare"
         }
       },
       "oauth_client": [
         {
-          "client_id": "261420243744-a2m2p3gv23pc34utjiagr0n7n9d7jjfl.apps.googleusercontent.com",
+          "client_id": "69026075891-1tpj499d3ii699nsp5pl060j06g0u1bv.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.android.chefshare",
-            "certificate_hash": "065041e1ca250b61d954ca20907a9d29917e282b"
+            "certificate_hash": "c2ebb853c87054c7eda6ef02ba45fd9982c37db5"
           }
         },
         {
-          "client_id": "261420243744-nkm295el65alsh58ce615o1j9egqem99.apps.googleusercontent.com",
+          "client_id": "69026075891-630frhc0r87cpvs5ephmh1nns8mekf9a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.chefshare",
+            "certificate_hash": "c1892735cba46687312c03a880e42c4f96f7ac2b"
+          }
+        },
+        {
+          "client_id": "69026075891-c77s7lpgg35rlcrij72co5gb27gjfp61.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.chefshare",
+            "certificate_hash": "5bdb49a86821fdefaeeeb81c756be427f036b440"
+          }
+        },
+        {
+          "client_id": "69026075891-sa1kl34choorkhsir07fgqfr3tphoola.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.chefshare",
+            "certificate_hash": "af863fc822f5c84a6b5591b8efe1a1b9bde23342"
+          }
+        },
+        {
+          "client_id": "69026075891-skd9mjm04hqc3pq3ddo9vfnvd4f76ij9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDwMj9Pc3G2HmoavxaPV2EjF5-V7KUREOY"
+          "current_key": "AIzaSyDABxNCtLWHSFMBA8zl10XjcAvYXPdgt5o"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "261420243744-nkm295el65alsh58ce615o1j9egqem99.apps.googleusercontent.com",
+              "client_id": "69026075891-skd9mjm04hqc3pq3ddo9vfnvd4f76ij9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -44,59 +69,35 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:261420243744:android:ef562623e40e39bf52d545",
+        "mobilesdk_app_id": "1:69026075891:android:f56ab9d0827bab19ccd386",
         "android_client_info": {
           "package_name": "com.app.chefshare"
         }
       },
       "oauth_client": [
         {
-          "client_id": "261420243744-5u6h0a25vn253q6itiaja1tnhhspljkc.apps.googleusercontent.com",
+          "client_id": "69026075891-l5ungndi8h1n8itl813t76q24d0jefpa.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.app.chefshare",
-            "certificate_hash": "c2ebb853c87054c7eda6ef02ba45fd9982c37db5"
+            "certificate_hash": "5bdb49a86821fdefaeeeb81c756be427f036b440"
           }
         },
         {
-          "client_id": "261420243744-c7sg07immm448l214ta43lb44o4rc8ct.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.app.chefshare",
-            "certificate_hash": "af863fc822f5c84a6b5591b8efe1a1b9bde23342"
-          }
-        },
-        {
-          "client_id": "261420243744-hn7upl5leaj5b4l5lcrqjgsppc25pkle.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.app.chefshare",
-            "certificate_hash": "065041e1ca250b61d954ca20907a9d29917e282b"
-          }
-        },
-        {
-          "client_id": "261420243744-nnukftalcbfi0jo0emhn2uj7dj8q6s4t.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.app.chefshare",
-            "certificate_hash": "12c348ce018f4fe2021ae749e64293bcb172d15b"
-          }
-        },
-        {
-          "client_id": "261420243744-nkm295el65alsh58ce615o1j9egqem99.apps.googleusercontent.com",
+          "client_id": "69026075891-skd9mjm04hqc3pq3ddo9vfnvd4f76ij9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDwMj9Pc3G2HmoavxaPV2EjF5-V7KUREOY"
+          "current_key": "AIzaSyDABxNCtLWHSFMBA8zl10XjcAvYXPdgt5o"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "261420243744-nkm295el65alsh58ce615o1j9egqem99.apps.googleusercontent.com",
+              "client_id": "69026075891-skd9mjm04hqc3pq3ddo9vfnvd4f76ij9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -12,7 +12,7 @@ interface OpenAIApi {
         "Accept: application/json" // 🔥 Cần thiết!
     )
     fun generateRecipe(
-        @Header("Authorization") apiKey: String,
+            @Header("Authorization") apiKey: String,
         @Body body: RequestBody
     ): Call<ChatResponse>
 }

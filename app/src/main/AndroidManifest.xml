@@ -14,7 +14,7 @@
         android:theme="@style/Theme.ChefShare"
         tools:targetApi="31">
         <activity
-            android:name="com.app.chefshare.LoginActivity"
+            android:name="com.app.chefshare.controllers.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.app.chefshare.RegisterActivity" />
-        <activity android:name="com.app.chefshare.MainActivity"
+        <activity android:name="com.app.chefshare.controllers.RegisterActivity" />
+        <activity android:name="com.app.chefshare.controllers.MainActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity android:name="com.app.chefshare.UploadRecipeActivity"
             android:windowSoftInputMode="adjustResize"/>
