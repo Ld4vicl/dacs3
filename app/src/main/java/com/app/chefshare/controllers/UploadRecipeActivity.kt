@@ -310,7 +310,7 @@ class UploadRecipeActivity : AppCompatActivity() {
             "userId" to userId,
             "createdAt" to createdAt
         )
-
+//loi do firebase
         FirebaseFirestore.getInstance().collection(collection).document(docId)
             .set(data)
             .addOnSuccessListener {
@@ -322,8 +322,8 @@ class UploadRecipeActivity : AppCompatActivity() {
 
                 finish()
             }
-            .addOnFailureListener {
-                Toast.makeText(this, "Lỗi lưu công thức!", Toast.LENGTH_SHORT).show()
+            .addOnFailureListener { exception ->
+                Toast.makeText(this, "Lỗi lưu công thức! ${exception.message}", Toast.LENGTH_SHORT).show()
             }
     }
 
