@@ -155,16 +155,17 @@ class RecipeDetailActivity : AppCompatActivity() {
                         }
                     }
 
-                    // THẢ TIM ❤️
+                    // like
                     val tvLikeCount = findViewById<TextView>(R.id.tvLikeCount)
 
                     if (user != null) {
                         val likesRef = FirebaseFirestore.getInstance()
                             .collection("recipes").document(recipeId)
 
+
                         likesRef.get().addOnSuccessListener { doc ->
                             val likes = doc.get("likes") as? List<*> ?: emptyList<String>()
-                            isLiked = user.uid in likes
+                            isLiked = user.uid in likes // check xem like chua
                             btnLike.setImageResource(
                                 if (isLiked) R.drawable.ic_heart_filled else R.drawable.ic_heart
                             )
@@ -177,7 +178,7 @@ class RecipeDetailActivity : AppCompatActivity() {
                             } else {
                                 mapOf("likes" to FieldValue.arrayUnion(user.uid))
                             }
-
+                            //update thoi gian thuc
                             FirebaseFirestore.getInstance().collection("recipes")
                                 .document(recipeId)
                                 .update(update)
@@ -217,7 +218,6 @@ class RecipeDetailActivity : AppCompatActivity() {
                         }
                     }
 
-                    // Hiển thị người đăng
                     if (userId.isNotBlank()) {
                         val currentUser = FirebaseAuth.getInstance().currentUser
 
@@ -239,7 +239,6 @@ class RecipeDetailActivity : AppCompatActivity() {
                                     uploaderAvatar.setImageResource(R.drawable.ic_person)
                                 }
                         } else {
-                            // ✅ Người dùng khác → lấy từ Firestore
                             FirebaseFirestore.getInstance().collection("users")
                                 .document(userId)
                                 .get()

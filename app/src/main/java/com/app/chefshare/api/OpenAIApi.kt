@@ -9,7 +9,7 @@ interface OpenAIApi {
     @POST("v1/chat/completions")
     @Headers(
         "Content-Type: application/json",
-        "Accept: application/json" // 🔥 Cần thiết!
+        "Accept: application/json"
     )
     fun generateRecipe(
             @Header("Authorization") apiKey: String,
